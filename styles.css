@@ -3,4 +3,14 @@ form {
 }
 body {
   background-color: pink;
+  margin-left: 800px;
+  border: 2px solid black;
+  padding: 20px 30px 20px 30px;
+  width: 600px;
+  border-radius: 20px;
+}
+p {
+  color: black;
+  font-size: 23px;
+  font-style: italic;
 }
