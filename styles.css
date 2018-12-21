@@ -12,5 +12,18 @@ body {
 p {
   color: black;
   font-size: 23px;
-  font-style: italic;
+}
+
+h2,
+h3,
+h4 {
+  color: white;
+}
+h1 {
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  top: 50px;
+  padding: 0cm;
+  border-radius: 20px;
 }
