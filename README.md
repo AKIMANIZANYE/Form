@@ -60,3 +60,5 @@ Email: akimanizanyeclaudine@gmail.com
 email :akimanizanyeclaudine@akilahinstitute.org
 Phone:0789616355
 #License and Copyright information.
+copyright: Claudine Akimanizanye @2018
+All right are served
