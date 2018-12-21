@@ -1,93 +1,87 @@
-$(document).ready(function() {
-  $("#hide").click(function() {
-    $("#submit").hide(1000);
-  });
 
-  $(document).ready(function() {
-    $("#blanks form").submit(function(event) {
-      var blanks = ["name", "secondName", "yourId", "email"];
 
-      blanks.forEach(function(blank) {
-        var userInput = $("input#" + blank).val();
-        $("." + blank).text(userInput);
-      });
 
-      $("#story").show();
+var count = 0;
+// var questionOne = document.getElementById("quest1").value;
+function check(a, b, c, d, e, f, g, h, j, k, l, m, n, o) {
 
-      event.preventDefault();
-    });
-  });
-});
-function check() {
-  var qOne = document.test.one.value;
-  var qTwo = document.test.two.value;
-  var qThree = document.test.three.value;
-  var qFour = document.test.four.value;
-  var qFive = document.test.five.value;
-  var qSix = document.test.six.value;
-  var qSeven = document.test.seven.value;
-  var qEight = document.test.eight.value;
-  var qNine = document.test.nine.value;
-  var qTen = document.test.ten.value;
-  var qEleven = document.test.eleven.value;
-  var qTwelve = document.test.twelve.value;
-  var qThirteen = document.test.thirteen.value;
-  var qFourteen = document.test.fourteen.value;
-  var count = 0;
-
-  if (one == "1") {
+  if (a == "1") {
     count += 1;
   }
-
-  if (qTwo == "2") {
+  if (b == "1") {
     count += 1;
   }
-  if (qThree == "3") {
+  if (b == "1") {
     count += 1;
   }
-  if (qFour == "4") {
+  if (c == "1") {
     count += 1;
   }
-  if (qFive == "5") {
+  if (d == "1") {
     count += 1;
   }
-  if (qSix == "6") {
+  if (e == "2") {
     count += 1;
   }
-  if (qSeven == "7") {
+  if (f == "1") {
+    count += 1;
+  }
+  if (g == "1") {
+    count += 1;
+  } if (h == "1") {
+    count += 1;
+  }
+  if (j == "1") {
+    count += 1;
+  }
+  if (k == "2") {
+    count += 1;
+  }
+  if (l == "1") {
+    count += 1;
+  }
+  if (m == "1") {
     count += 1;
   }
 
-  if (qEight == "8") {
+
+  if (n == "1") {
     count += 1;
   }
-  if (qNine == "9") {
-    count += 1;
-  }
-  if (qTen == "10") {
-    count += 1;
-  }
-  if (qEleven == "select") {
-    count += 1;
-  }
-  if (qTwelve == "select") {
+  if (o == "1") {
     count += 1;
   }
 
-  if (qThirteen == "select") {
-    count += 1;
-  }
-  if (qFourteen == "select") {
-    count += 1;
-  }
+  return count
+  // document.getElementById("after_submit").style.visibility ="visible";
 
-  document.getElementById("after_submit").style.visibility = "visible";
+  // document.getElementById("number_count").innerHTML = "You got " +count + "%.";
 
-  document.getElementById("number_count").innerHTML =
-    "Your Score is " + count + "14.";
+};
+$(document).ready(function () {
 
-  $("#button").hide();
-  $("#test").hide();
-  $("#number_count").show();
-  event.preventDefault();
-}
+  $('#myform form').submit(function () {
+    event.preventDefault();
+    var Question1 = $("input[type='radio'][name='a']:checked").val()
+    var Question2 = $("input[type='radio'][name='b']:checked").val()
+    var Question3 = $("input[type='radio'][name='c]:checked").val()
+    var Question4 = $("input[type='radio'][name='d']:checked").val()
+    var Question5 = $("input[type='radio'][name='e']:checked").val()
+    var Question6 = $("input[type='radio'][name='f']:checked").val()
+    var Question7 = $("input[type='radio'][name='g']:checked").val()
+    var Question8 = $("input[type='radio'][name='h']:checked").val()
+    var Question9 = $("input[type='radio'][name='j']:checked").val()
+    var Question10 = $("input[type='radio'][name='k']:checked").val()
+    var Question11 = $("input[type='radio'][name='l']:checked").val()
+    var Question12 = $("input[type='radio'][name='m']:checked").val()
+    var Question13 = $("input[type='radio'][name='n']:checked").val()
+    var Question14 = $("input[type='radio'][name='o']:checked").val()
+
+    // console.log(Question1)
+    check(Question1, Question2, Question3, Question4, Question5, Question6, Question7, Question8, Question9, Question10, Question11, Question12, Question13, Question14)
+    $("#quiz").hide();
+    $('#number_count').text("You got " + count + "/14.")
+    $("#number_count").show();
+  })
+
+})

@@ -1,305 +1,254 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Form</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <link href="styles.css" rel="stylesheet" type="text/css" />
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.0.js"
-      integrity="sha256-TFWSuDJt6kS+huV+vVlyV1jM3dwGdeNWqezhTxXB/X8="
-      crossorigin="anonymous"
-    ></script>
-    <script src="javascript.js"></script>
-    <title>Test of javascript</title>
-  </head>
-  <body >
-    <h1>QUIZ BOARD</h1>
-    <h2>Instruction for Competency</h2>
-    <p>
-      This Competency has two section  , All question are required to answer
-      it and then submitted ,after your submition you will see your marks to
-      pass you must have at least 9 of fourteen.
-    </p>
-    <div id="submit">
-      <h3>Fill out your information</h3>
-      <div class="text">
-        <label> <input type="text" name="firstname" value="name"/></label>
+<head>
+  <title>Form</title>
+  <link href="bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://code.jquery.com/jquery-3.3.0.js" integrity="sha256-TFWSuDJt6kS+huV+vVlyV1jM3dwGdeNWqezhTxXB/X8="
+    crossorigin="anonymous"></script>
+  <script src="javascript.js"></script>
+  <title>Test of javascript</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+
+      <h1>QUIZ BOARD</h1>
+      <h2>Instruction for Competency</h2>
+      <p>
+        This Competency has two section , All question are required to answer
+        it and then submitted ,after your submition you will see your marks to
+        pass you must have at least 9 of fourteen.
+      </p>
+      <div id='myform'>
+        <form>
+          <p>1.Denition of javascript</p>
+          <div class="radio">
+
+            <input type="radio" name="a" value="1" />is a programming language commonly used in web development.
+
+          </div>
+          <div class="radio">
+
+            <input type="radio" name="a" value="0" />is contains all the HTML HEAD and BODY objects in the tags of
+            an HTM page.
+
+          </div>
+          <div class="radio">
+
+            <input type="radio" name="a" value="0" />is a programming language that produces software for multiple
+            platforms.
+
+          </div>
+          <p>2.which is the best way to link your javascript code to THML code?</p>
+
+          <div class="radio">
+
+
+            <input type="radio" name="b" value="1" />BY using
+            Link
+          </div>
+          <div class="radio">
+
+
+            <input type="radio" name="b value=" 0" /> By putting them
+            in one file
+          </div>
+
+          <div class="radio">
+
+
+            <input type="radio" name="b" value="0" /> BY using
+            concactination
+          </div>
+          <p> 3.How do we declare comment in javascript?</p>
+          <div class="radio">
+
+
+
+            <input type="radio" name="c" value="1" />//my name
+
+            <input type="radio" name="c" value="0" />/my name
+
+          </div>
+          <p>4.How do we declare variable in javascript?</p>
+          <div class="radio">
+
+            <input type="radio" name="d" value="0" />variable = 5;
+          </div>
+          <div class="radio">
+
+
+            <input type="radio" name="d value=" 1" /> var x = 5;
+          </div>
+          <div class="radio">
+
+            <input type="radio" name="d" value="0" />variable x = 5;
+          </div>
+          <p> 5.How do you add after declation of variables?</p>
+          <div class="radio">
+
+            <input type="radio" name="e" value="0" />var z += x , y;
+          </div>
+          <div class="radio">
+          </div>
+
+
+          <input type="radio" name="e" value="0" /> var +x + y=z;
+          <div class="radio">
+
+
+            <input type="radio" name="e" value="1" />var z = x + y;
+          </div>
+          <p>6.what is the name of % in javascript?</p>
+          <div class="radio">
+
+            <input type="radio" name="f" value="0" />percentage
+          </div>
+          <div class="radio">
+
+            <input type="radio" name="f" value="0" />zero divided zero
+          </div>
+          <div class="radio">
+
+            <input type="radio" name="f" value="1" />modulus
+          </div>
+
+          7.How do write datatype of string?
+          <div class="radio">
+
+            <input type="radio" name="g" value="0" />var a = kelly ;
+          </div>
+          <div class="radio">
+
+
+            <input type="radio" name="g" value="1" /> var a ="kelly";
+          </div>
+          <div class="radio">
+
+
+            <input type="radio" name="g" value="0" />var a = "kelly"
+          </div>
+          <p>8.How do we declare function ?</p>
+          <div class="radio">
+
+            <input type="radio" name="h" value="0" />function
+            myFunction(a; b)
+          </div>
+          <div class="radio">
+
+            <input type="radio" name="h" value="0" />myFuction(a,b)
+          </div>
+          <div class="radio">
+
+            <input type="radio" name="h" value="1" />function
+            myFunction(a,b)
+          </div>
+          <p> 9.how do we declare arrays in javascript?</p>
+          <div class="radio">
+
+            <input type="radio" name="j" value="0" />var cars =
+            ("saab""volovo","Toyoya");
+          </div>
+          <div class="radio">
+
+            <input type="radio" name="j" value="1" />var cars = ["Saab",
+            "Volvo", "BMW"];
+          </div>
+          <div class="radio">
+
+            <input type="radio" name="j" value="0" />cars =
+            ["saab""volovo","Toyoya"];
+          </div>
+          <p> 10.how do we write math rondom ?</p>
+          <div class="radio">
+
+            <input type="radio" name="k" value="1" />Math.random();
+          </div>
+          <div class="radio">
+            >
+            <input type="radio" name="k" value="0" />var =math.random();
+          </div>
+          <div class="radio">
+
+            <input type="radio" name="k" value="0" />math.Random();
+          </div>
+
+          <p>11. What are all the types of Pop up boxes available in JavaScript?</p>
+
+          <div class="radio">
+
+            <input type="radio" name="l" value="0" />Alert
+          </div>
+          <div class="radio">
+
+            <input type="radio" name="l" value="1" /> println
+          </div>
+
+          <div class="radio">
+
+            <input type="radio" name="l" value="0" />console
+          </div>
+          <p>12. What is an undefined value in JavaScript mean to you ?</p>
+
+          <div class="radio">
+
+            <input type="radio" name="m" value="0" />it is data types
+          </div>
+          <div class="radio">
+
+            <input type="radio" name="m" value="1" />Variable used in
+            the code doesn't exist
+          </div>
+
+          <div class="radio">
+
+            <input type="radio" name="m" value="0" />Variable is not
+            assigned to any value
+          </div>
+          <p>13. What is === operator?</p>
+
+          <div class="radio">
+
+            <input type="radio" name="n" value="0" /> Alert
+          </div>
+
+
+          <input type="radio" name="n" value="1" />println
+          <div class="radio">
+
+            <input type="radio" name="n" value="0" />console
+          </div>
+
+          <p>14. what is the syntax of if statments in javascript?</p>
+
+          <div class="radio">
+            <input type="radio" name="0" value="1" />if(condtion){code}
+          </div>
+          <div class="radio">
+
+            <input type="radio" name="o" value="0" />if {
+            condtion(code)}
+          </div>
+
+          <div class="radio">
+
+            <input type="radio" name="o" value="0" />if
+            (condtion){code}else{code}
+          </div>
+          <button id="button" type="submit" value="submit">submit</button>
+          <div id="after_submit">
+            <p id="number_count"></p>
+          </div>
+        </form>
       </div>
-
-      <div class="text">
-        <label>
-          <input type="text" name="lastname" value="secondname" />
-        </label>
-      </div>
-      <div class="text">
-        <label> <input type="text" name="idstudents" value="your id" /> </label>
-      </div>
-      <div class="text">
-        <label> <input type="text" name="email" value="email" /> </label>
-      </div>
-      <button id="hide">submition</button>
     </div>
-    <form class="test">
-    <h4>Start answering the quetions bellow!!</h4>
-    <p>1.Denition of javascript</p>
-    <select class="form-control" id="beverage">
-        <option
-          >select.
-        </option>
-      <option id=
-        >is a programming language commonly used in web development.
-      </option>
-      <option>
-        is contains all the HTML HEAD and BODY objects in the tags of an HTML
-        page.
-      </option>
-      <option
-        >is a programming language that produces software for multiple
-        platforms.</option
-      >
-    </select>
-    <p>2.which is the best way to link your javascript code to THML code?</p>
-    <div class="radio">
-      <label>
-        <input type="radio" name="one" value="2" checked /> By using
-        jquery CDN
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="one" value="vanilla" /> BY using
-        concactination
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="one" value="cookiesandcream" />By putting them
-        in one file
-      </label>
-    </div>
-   
-    <div class="radio">
-      <label>
-        <input type="radio" name="two" value="vanilla" /> BY using
-        concactination
-      </label>
-    </div>
-   <p> 3.How do we declare comment in javascript?</p>
-    <div class="radio">
-      <label>
-        <input type="radio" name="three" value="3" />//my name
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="three" value="questio" />/my name
-      </label>
-    </div>
-   <p>4.How do we declare variable in javascript?</p> 
-    <div class="radio">
-      <label>
-        <input type="radio" name="four" value="questi" /> variable = 5;
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="four" value="4" />var x = 5;
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="four" value="questi" />variable x = 5;
-      </label>
-    </div>
-   <p> 5.How do you add after declation of variables?</p> 
-    <div class="radio">
-      <label>
-        <input type="radio" name="five" value="quest" /> var z += x , y;
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="five" value="quest" />var +x + y=z;
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="five" value="5" />var z = x + y;
-      </label>
-    </div>
-   <p>6.what is the name of % in javascript?</p> 
-    <div class="radio">
-      <label> <input type="radio" name="six" value="ques" /> percentage </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="six" value="ques" />zero divided zero
-      </label>
-    </div>
-    <div class="radio">
-      <label> <input type="radio" name="six" value="6" />modulus </label>
-    </div>
-
-    7.How do write datatype of string?
-    <div class="radio">
-      <label>
-        <input type="radio" name="seven" value="que" /> var a = kelly ;</label
-      >
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="seven" value="7" />var a ="kelly";
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="seven" value="que" />var a = "kelly"
-      </label>
-    </div>
-    <p>8.How do we declare function ?</p> 
-    <div class="radio">
-      <label>
-        <input type="radio" name="eight" value="number" /> function
-        myFunction(a; b)</label
-      >
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="eight" value="number" />myFuction(a,b)
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="eight" value="8" />function
-        myFunction(a,b)
-      </label>
-    </div> 
-  <p> 9.how do we declare arrays in javascript?</p>
-    <div class="radio">
-      <label>
-        <input type="radio" name="nine" value="numb" /> var cars =
-        ("saab""volovo","Toyoya");</label
-      >
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="nine" value="9" />var cars = ["Saab",
-        "Volvo", "BMW"];
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="nine" value="numb" />cars =
-        ["saab""volovo","Toyoya"];
-      </label>
-    </div>
-  <p> 10.how do we write math rondom ?</p>
-    <div class="radio">
-      <label>
-        <input type="radio" name="ten" value="10" />Math.random();
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="ten" value="num" />var =math.random();
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="ten" value="num" />math.Random();
-      </label>
-    </div>
-
-    <p>11. What are all the types of Pop up boxes available in JavaScript?</p>
-
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" name="eleven" value="select" />Alert
-      </label>
-    </div>
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" name="eleven" value="select" /> Prompt
-      </label>
-    </div>
-
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" name="eleven" value="select" /> console
-      </label>
-    </div>
-    <p>12. What is an undefined value in JavaScript mean to you ?</p>
-
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" name="twelve" value="selec" />it is data types
-      </label>
-    </div>
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" name="twelve" value="selec" />Variable used in
-        the code doesn't exist
-      </label>
-    </div>
-
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" name="twelve" value="selec" /> Variable is not
-        assigned to any value
-      </label>
-    </div>
-  </body>
-  <p>13. What is === operator?</p>
-
-  <div class="checkbox">
-    <label> <input type="checkbox" name="thirteem" value="select" />Alert </label>
   </div>
-  
-    <label>
-      <input type="checkbox" name="thirteem value="select" /> Prompt
-    </label>
   </div>
 
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" name="thirteem" value="select" /> console
-    </label>
-  </div>
+</body>
 
-  <p>14. what is the syntax of if statments in javascript?</p>
-
-  <div class="checkbox">
-    <label>
-      <input type="checkBox" name="fourteen" value="select" />if(condtion){code}
-    </label>
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" name="fourteen" value="select" /> if {
-      condtion(code)}
-    </label>
-  </div>
-
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" name="fourteen" value="select" /> if
-      (condtion){code}else{code}
-    </label>
-  </div>
-  <div>
-
-  </div class=>
-</form>
-  </body>
 </html>

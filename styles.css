@@ -3,8 +3,8 @@ form {
 }
 body {
   background-color: pink;
-  margin-left: 800px;
-  border: 2px solid black;
+  margin-left: 400px;
+
   padding: 20px 30px 20px 30px;
   width: 600px;
   border-radius: 20px;
@@ -14,16 +14,14 @@ p {
   font-size: 23px;
 }
 
-h2,
-h3,
-h4 {
-  color: white;
-}
 h1 {
   border: 2px solid black;
   background-color: black;
-  color: white;
+  color: red;
   top: 50px;
   padding: 0cm;
   border-radius: 20px;
+}
+#number_count {
+  display: none;
 }
