@@ -5,6 +5,7 @@ My project called is called Quiz Board it is in kind of form , I designed it so 
 Author(s) information.
 I am claudine Akimanizanye a student from Moringa school;I am passionate about to be a softerware developer
 Author: Claudine Akimanizanye <akimanizanye.claudine@gmail.com>
+https://github.com/AKIMANIZANYE/Form.git
 Date: Fri Dec 21 08:24:45 2018 +
 
 #Setup instructions -
@@ -58,6 +59,7 @@ closing blackes
 
 Email: akimanizanyeclaudine@gmail.com
 email :akimanizanyeclaudine@akilahinstitute.org
+https://github.com/AKIMANIZANYE/Form.git
 Phone:0789616355
 #License and Copyright information.
 copyright: Claudine Akimanizanye @2018
