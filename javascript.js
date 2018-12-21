@@ -17,9 +17,6 @@ $(document).ready(function() {
       event.preventDefault();
     });
   });
-
-  var beverage = $("#beverage").val();
-  var flavor = $("input:radio[name=one]:checked").val();
 });
 function check() {
   var qOne = document.test.one.value;
