@@ -11,16 +11,13 @@ function check(a, b, c, d, e, f, g, h, j, k, l, m, n, o) {
   if (b == "1") {
     count += 1;
   }
-  if (b == "1") {
-    count += 1;
-  }
   if (c == "1") {
     count += 1;
   }
   if (d == "1") {
     count += 1;
   }
-  if (e == "2") {
+  if (e == "1") {
     count += 1;
   }
   if (f == "1") {
@@ -34,7 +31,7 @@ function check(a, b, c, d, e, f, g, h, j, k, l, m, n, o) {
   if (j == "1") {
     count += 1;
   }
-  if (k == "2") {
+  if (k == "1") {
     count += 1;
   }
   if (l == "1") {
@@ -43,8 +40,6 @@ function check(a, b, c, d, e, f, g, h, j, k, l, m, n, o) {
   if (m == "1") {
     count += 1;
   }
-
-
   if (n == "1") {
     count += 1;
   }
@@ -61,7 +56,7 @@ function check(a, b, c, d, e, f, g, h, j, k, l, m, n, o) {
 $(document).ready(function () {
 
   $('#myform form').submit(function () {
-    event.preventDefault();
+
     var Question1 = $("input[type='radio'][name='a']:checked").val()
     var Question2 = $("input[type='radio'][name='b']:checked").val()
     var Question3 = $("input[type='radio'][name='c]:checked").val()
@@ -77,9 +72,10 @@ $(document).ready(function () {
     var Question13 = $("input[type='radio'][name='n']:checked").val()
     var Question14 = $("input[type='radio'][name='o']:checked").val()
 
+    event.preventDefault();
     // console.log(Question1)
     check(Question1, Question2, Question3, Question4, Question5, Question6, Question7, Question8, Question9, Question10, Question11, Question12, Question13, Question14)
-    $("#quiz").hide();
+    $("#myform form").hide();
     $('#number_count').text("You got " + count + "/14.")
     $("#number_count").show();
   })

@@ -22,6 +22,9 @@ h1 {
   padding: 0cm;
   border-radius: 20px;
 }
+h2{ 
+  font-style: italic;
+}
 #number_count {
   display: none;
 }
